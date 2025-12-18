@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Stack } from "@mui/material";
+import Result from "./components/Result";
+import Summary from "./components/Summary";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    return (
+        //Main Body Content
+        <Stack
+            minHeight='100vh'
+            justifyContent='center'
+            alignItems='center'
+        >
+            {/* WRAPPER CONTAINER */}
+            <Stack
+                bgcolor='white'
+                maxWidth='600px'
+                gap={2}
+                fontFamily='"Hanken Grotesk", sans-serif'
+                sx={{
+                    flexDirection: { lg: "row", md: "row", sm: "column" },
+                    borderRadius: { lg: "25px", md: "25px", sm: "0px" },
+                    borderBottomLeftRadius: "25px",
+                    borderBottomRightRadius: "25px",
+                    boxShadow: "rgba(149,157,165,0.2) 0px 8px 24px"
+                }}>
+                {/* RESULT COMPONENT */}
+                <Result />
+                {/* SUMMARY COMPONENT */}
+                <Summary />
+            </Stack>
+        </Stack>
+    );
+};
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+export default App; 
