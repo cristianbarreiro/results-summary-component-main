@@ -55,19 +55,22 @@ const Summary = () => {
                 Summary
             </Typography>
 
-                <List >
-                    {summaryData.map((item, index) => (
-                        <ListItem
-                            key={index}
-                            sx={{
-                                background: `${item.bgColor}`,
-                                marginBlock: "10px",
-                                padding: "0px",
-                                borderRadius: "12px",
-                            }}
-                        >
-                        <ListItemIcon sx={{ minWidth: "28px", paddingLeft: "12px"}}>
-                            <img src={item.icon} alt="icons"/>
+            <List >
+                {summaryData.map((item, index) => (
+                    <ListItem
+                        key={index}
+                        sx={{
+                            background: `${item.bgColor}`,
+                            marginBlock: "10px",
+                            padding: "0px",
+                            borderRadius: "12px",
+                            boxSizing: "border-box",
+                            display: "flex",
+                            alignItems: "center",
+                        }}
+                    >
+                        <ListItemIcon sx={{ minWidth: "28px", paddingLeft: "12px" }}>
+                            <img src={item.icon} alt="icons" />
                         </ListItemIcon>
                         <ListItemText
                             primaryTypographyProps={{
