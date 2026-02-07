@@ -8,10 +8,14 @@ const App = () => {
     return (
         //Main Body Content
         <Stack
+            component="main"
             minHeight='100vh'
             justifyContent='center'
             alignItems='center'
         >
+            <h1 style={{ position: 'absolute', left: '-9999px' }}>
+                Results Summary Component
+            </h1>
             {/* WRAPPER CONTAINER */}
             <Stack
                 bgcolor='white'
