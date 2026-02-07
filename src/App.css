@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
-
-body {
-    margin:0;
-    font-family:'Hanken Grotesk', sans-serif !important;
-    background-color: hsl(221, 100%, 96%);
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif !important;
+  background-color: hsl(221, 100%, 96%);
+}
