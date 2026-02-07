@@ -32,7 +32,7 @@ const Result = () => {
                 <Typography
                     color='white'
                     fontFamily='"Hanken Grotesk", sans-serif'
-                    fontWeight='500'
+                    fontWeight='700'
                     fontSize='3.75rem'
                     lineHeight={1}
                 >
@@ -54,7 +54,7 @@ const Result = () => {
                     component="h2"
                     color='white'
                     fontFamily='"Hanken Grotesk", sans-serif'
-                    fontWeight='500'
+                    fontWeight='700'
                     textAlign='center'
                     mb={1}
                 >
