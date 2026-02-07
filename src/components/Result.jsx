@@ -51,6 +51,7 @@ const Result = () => {
             <Box>
                 <Typography
                     variant="h5"
+                    component="h2"
                     color='white'
                     fontFamily='"Hanken Grotesk", sans-serif'
                     fontWeight='500'
