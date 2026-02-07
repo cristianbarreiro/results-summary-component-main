@@ -10,10 +10,8 @@ const Result = () => {
             sx={{
                 background:
                     'linear-gradient(0deg,hsl(241,81%,54%), hsl(252,100%,67%))',
-                width: { lg: '50%', md: '50%', sm: 'auto' },
-                borderRadius: { lg: "25px", md: "25px", sm: "0px" },
-                borderBottomLeftRadius: "25px",
-                borderBottomRightRadius: "25px",
+                width: { xs: 'auto', md: '50%' },
+                borderRadius: "25px",
             }}
         >
             <Typography
