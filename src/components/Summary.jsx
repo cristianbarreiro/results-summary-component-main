@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Button } from "@mui/material";
+import { Stack, Typography, List, ListItem, ListItemIcon, ListItemText, Button } from "@mui/material";
 import ReactionIcon from '../assets/images/icon-reaction.svg';
 import MemoryIcon from '../assets/images/icon-memory.svg';
 import VerbalIcon from '../assets/images/icon-verbal.svg';
@@ -81,7 +81,7 @@ const Summary = () => {
                         >
                             {item.category}
                         </ListItemText>
-                        <ListSubheader
+                        <Typography
                             sx={{
                                 background: "transparent",
                                 marginLeft: "55px",
@@ -93,7 +93,7 @@ const Summary = () => {
                                 {item.score}
                             </span>{" "}
                             / 100
-                        </ListSubheader>
+                        </Typography>
                     </ListItem>
                 ))}
             </List>
